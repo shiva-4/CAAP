@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilizing Mixed Reality to Increase Engagement in Children with Autism</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav {
+            background-color: #333;
+            width: 250px;
+            height: 100vh; /* Full viewport height */
+            position: fixed; /* Fixed position */
+            overflow: auto; /* Allows scrolling in the navigation menu */
+            top: 0;
+            left: 0;
+        }
+
+            nav ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+                nav ul li {
+                    display: block;
+                }
+
+                    nav ul li a {
+                        color: white;
+                        padding: 15px;
+                        text-decoration: none;
+                        display: block;
+                    }
+
+                        nav ul li a:hover {
+                            background-color: #575757;
+                        }
+
+        .content {
+            margin-left: 270px; /* Margin to leave space for the fixed nav */
+            padding: 20px;
+            width: 100%;
+        }
+
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        #welcome-section {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            height: 100vh; /* Full viewport height */
+        }
+
+        <style >
+        .menu-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            z-index: 1000; /* Ensures the button is on top */
+        }
+
+        .menu-button:hover {
+            background-color: #575757;
+        }
+
+        .nav-closed {
+            transform: translateX(-250px); /* Hides the menu off the screen */
+            transition: transform 0.3s ease;
+        }
+
+        .nav-open {
+            transform: translateX(0); /* Shows the menu */
+            transition: transform 0.3s ease;
+        }
+    </style>
+
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <!-- Menu Button -->
+    <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
+
+
+    <nav>
+        <ul>
+            <li><a href="#team-info">Team Information</a></li>
+            <li><a href="#project-info">Project Information</a></li>
+            <li><a href="#meetings">Minutes and Agendas</a></li>
+            <li class="bold">
+                <a aria-label="Navigate to the Abstract section" href="#Abstract" class="waves-effect waves-dark teal-text">
+                    <i class="mdi-content-description small"></i><span>Abstract</span>
+                </a>
+            </li>
+            <li><a href="#presentations">Presentations</a></li>
+            <li><a href="#final-report">Final Report</a></li>
+            <li><a href="#deliverables">Project Deliverables</a></li>
+            <li><a href="#specifications">Final Specifications</a></li>
+            <li><a href="#design-docs">Design Documentation</a></li>
+            <li><a href="#project-mgmt">Project Management</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="content">
+        <section id="welcome-section">
+            <h1>Welcome to Our Project</h1>
+            <p>Utilizing Mixed Reality to Increase Engagement in Children with Autism</p>
+        </section>
+        <section id="team-info" class="container">
+            <h2>Team Information</h2>
+            <p>Team Number: 2</p>
+            <p>Team Title: Strategic Tech</p>
+            <p>Team URL: <a href="https://akkpuvvada.github.io/CAPProject/" target="_blank">https://akkpuvvada.github.io/CAPProject/</a></p>
+
+            <!-- Team Information Table -->
+            <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+                <thead>
+                    <tr style="background-color: #f2f2f2; border-bottom: 2px solid #ddd;">
+                        <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Name</th>
+                        <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">
+                            <img src="static/img/akshay.png" alt="Akshaya Kumar Puvvada" style="width: 100px; height: 100px; border-radius: 50%;"><br>
+                            <strong>Akshaya Kumar Puvvada</strong>
+                        </td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">
+                            Role: Tech Lead<br>
+                            E: <a href="mailto:puvvadaa0348@uhcl.edu">puvvadaa0348@uhcl.edu</a><br>
+                            P: (917)-806-7354
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">
+                            <img src="static/img/shiva.png" alt="Shiva Krishna Nangunuri" style="width: 100px; height: auto; border-radius: 50%;"><br>
+                            <strong>Shiva Krishna Nangunuri</strong>
+                        </td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">
+                            Role: System Analyst<br>
+                            E: <a href="mailto:nangunuris1516@uhcl.edu">nangunuris1516@uhcl.edu</a><br>
+                            P: (713)-320-4721
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">
+                            <img src="static/img/monika.png" alt="Monika Bondala" style="width: 100px; height: auto; border-radius: 50%;"><br>
+                            <strong>Monika Bondala</strong>
+                        </td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">
+                            Role: Systems Architect<br>
+                            E: <a href="mailto:bondalam0349@uhcl.edu">bondalam0349@uhcl.edu</a><br>
+                            P: (732)-983-8730
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
+        <section id="project-info" class="container">
+            <h2>Project Information</h2>
+            <p><strong>Mentors:</strong> Dr. Dorothea Lerman (<a href="mailto:lerman@uhcl.edu">lerman@uhcl.edu</a>) and Dr. Ross Niswanger (<a href="mailto:niswanger@uhcl.edu">niswanger@uhcl.edu</a>), University of Houston – Clear Lake.</p>
+
+            <h3>Introduction</h3>
+            <p>Autism spectrum disorder (ASD) is a neurological and developmental disorder that impairs social communication and social interaction with varying levels of severity. While children with ASD can receive applied behavior analysis (ABA) therapy that can provide potential improvement to ASD deficiencies, ABA care is typically limited by various time constraints, from caregiver availability to cost of services. Mixed reality is a combination of the physical world with augmented reality. Utilizing Apple Vision Pro’s mixed-reality (MR) technology, we will explore the effectiveness of various digital stimuli in garnering engagement by children with various levels of ASD with the physical world and digital objects that can augment treatment for ASD deficiencies.</p>
+
+            <h3>Project</h3>
+            <p>We will develop MR software to elicit various types of engagement, focused on children with ASD. Specifically, we will focus on receptive communication, expressive communication, gross motor skills, and fine motor skills engagement. Initially, software development will focus on control by a caregiver, such as a therapist or parent, along with measurement of participant data. The software will utilize HoloLens’ visual and auditory capabilities to create various digital avatars and objects to stimulate the focus areas of engagement, combined with ability for control and perception of the displayed MR environment by another person, as well as the automated collection of participant actions and reactions to the stimuli.</p>
+
+            <h3>Input</h3>
+            <p>Apple Vision Pro has multimodal interaction, including eye-tracking (with gaze and dwell), hand-tracking, and voice input that will be collected for data analysis. Along with the interaction inputs, subjective data will be collected from observers/controllers regarding the various interactions that occur (e.g., levels of difficulty, emotional responses, etc.). All data collected will be secured and protected to ensure participant privacy.</p>
+
+            <h3>Output</h3>
+            <p>Digital objects and scenarios, anchored and free-floating, will be developed that will interact with participants to invoke verbal communication and manipulation. Scenarios will be viewable by linked HoloLens and traditional monitors.</p>
+        </section>
+
+        <section id="meetings" class="container">
+            <h2>Agendas</h2>
+
+            <h3>Critical Tasks</h3>
+            <ul>
+                <li>Identifying ways to create a shared space experience.</li>
+                <li>Creating viewable experiences from any angle in the shared space.</li>
+                <li>Plotting anchor points and angles.</li>
+            </ul>
+
+            <h3>Hardware Requirements</h3>
+            <ul>
+                <li>MacBook or Mac mini</li>
+                <li>At least 2 Apple Vision Pros (AVPs)</li>
+            </ul>
+
+            <h3>Tools/Software Toolkits Required</h3>
+            <ul>
+                <li>Unity</li>
+                <li>SwiftUI</li>
+                <li>Reality Kit</li>
+                <li>AR Kit</li>
+                <li>Reality Composer Pro (for 3D Content)</li>
+            </ul>
+
+            <h3>Milestone Information</h3>
+            <ol>
+                <li>Project setup and documentation</li>
+                <li>AVP sample game</li>
+                <li>Synchronization with anchors</li>
+                <li>Singleton application to work for multiple AVPs</li>
+            </ol>
+        </section>
+        <section id="Abstract">
+            <h2>Abstract</h2>
+            <p>
+                Therapists aim to evaluate how children with autism interact with and respond to dangerous road crossing scenarios within a mixed reality (MR) application designed for shared spaces. The application not only simulates realistic traffic environments but also incorporates features intended to enhance safety awareness, decision-making, and motor skills of autistic children. By analyzing the behaviors and responses of autistic children in these simulated scenarios, therapists seek to identify challenges and opportunities for improvement.
+            </p>
+            <p>
+                Ultimately, the goal is to refine the MR application to better support and improve the road-crossing skills and safety awareness of children with autism, contributing to their overall developmental progress. The mixed reality application would be developed in Apple Vision Pro (AVP), utilizing the anchor points and world locking services provided by Apple. The application has to be tested thoroughly for synchronization of anchor points and holograms visible through AVP for both the therapist and the child.
+            </p>
+            <p>
+                Furthermore, the application explores the possibility of collecting interaction data with holograms during dangerous road-crossing scenarios through eye tracking. This data can be analyzed using machine learning models, offering deeper insights into the interaction patterns of autistic children with the MR environment.
+            </p>
+        </section>
+
+        <section id="presentations">
+            <h2>Mid-term and Final Presentations</h2>
+            <p>Include links or embedded presentations here.</p>
+        </section>
+
+        <section id="final-report">
+            <h2>Final Report</h2>
+            <p>Attach the final report document or summary here.</p>
+        </section>
+
+        <section id="deliverables">
+            <h2>Project Deliverables</h2>
+            <p>List the project deliverables here.</p>
+        </section>
+
+        <section id="specifications">
+            <h2>Final Specifications</h2>
+            <p>Include the final specifications of the project here.</p>
+        </section>
+
+        <section id="design-docs">
+            <h2>Design Documentation</h2>
+            <p>Include design documentation such as UML diagrams here.</p>
+        </section>
+
+        <section id="project-mgmt">
+            <h2>Project Management Information</h2>
+            <p>Provide project management details here.</p>
+        </section>
+    </div>
+</body>
+<script>
+    function toggleMenu() {
+        var nav = document.querySelector('nav');
+        if (nav.classList.contains('nav-open')) {
+            nav.classList.remove('nav-open');
+            nav.classList.add('nav-closed');
+        } else {
+            nav.classList.remove('nav-closed');
+            nav.classList.add('nav-open');
+        }
+    }
+</script>
+
+</html>
